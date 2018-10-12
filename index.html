@@ -1,14 +1,32 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Could Cafe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
 </head>
 <body>
+    <h1>Cloud Cafe</h1>
+        <div class="content">
+            <form id="add-cafe-from"></form>
+            <ul id="cafe-list"></ul>
+
+        </div>
+
     
+    <script>
+        // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyArk2Un_NMajWfTg3aPPAUlebq36IDWGTI",
+        authDomain: "cloudcafe-bfca0.firebaseapp.com",
+        databaseURL: "https://cloudcafe-bfca0.firebaseio.com",
+        projectId: "cloudcafe-bfca0",
+        storageBucket: "cloudcafe-bfca0.appspot.com",
+        messagingSenderId: "323527646865"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="app.js"></script>
 </body>
 </html>
