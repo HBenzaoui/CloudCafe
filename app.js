@@ -43,9 +43,16 @@ form.addEventListener('submit', (e) => {
         name: form.name.value,
         city: form.city.value
     });
-    form.name.value = '';
-    form.city.value = '';
-}
+        form.name.value = '';
+        form.city.value = '';
+
+    } else {
+        if (form.name.value == ''){
+        form.name.focus();
+        } else if(form.city.value == ''){
+        form.city.focus();
+        }
+    }
 });
 
 //real-time listner

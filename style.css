@@ -1,5 +1,5 @@
 body{
-    background:chocolate;
+    background:#420101;
     font-family: ubuntu;
 }
 
@@ -27,9 +27,9 @@ ul{
 
 li{
     padding: 20px;
-    background: #f6f6f6;
+    background: #ffffff;
     font-size: 20px;
-    color: #555;
+    color: #602207;
     position: relative;
     border-bottom: 1px solid #e6e6e6;
     height: 46px;
@@ -37,7 +37,7 @@ li{
 
 li:nth-child(even){
     padding: 20px;
-    background: #f2f2f2;
+    background: #ffffff;
 }
 
 li span{
@@ -47,7 +47,7 @@ li span{
 li span:nth-child(2){
     font-size: 16px;
     margin-top: 6px;
-    color: #999;
+    color: #967254;
 }
 
 li div{
@@ -60,6 +60,13 @@ li div{
     padding: 10px 0;
     font-weight:  bold;
     cursor:  pointer;
+    color:  #8D350E;
+    margin-top: 1em;
+    
+}
+
+li div:hover{
+    color: red;
 }
 
 form input{
@@ -73,6 +80,9 @@ form input{
     display: block;
     box-sizing: border-box;
     font-size: 18px;
+}
+form input::placeholder{
+    color: #beb4ab;
 }
 
 form input:focus{
@@ -93,10 +103,10 @@ button{
     background: #fff;
     border-radius: 10px;
     padding: 13px;
-    width: 14%;
+    width: 18%;
     box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
     font-weight: bold;
     font-family: ubuntu;
     letter-spacing: 1px;
-    color: #999;
+    color: #420101;
 }
