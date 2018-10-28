@@ -4,16 +4,21 @@
     <meta charset="utf-8" />
     <title>Could Cafe</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-firestore.js"></script>
 </head>
 <body>
     <h1>Cloud Cafe</h1>
         <div class="content">
-            <form id="add-cafe-from"></form>
+            <form id="add-cafe-from">
+                <input type="text" name="name" placeholder="Nom du café">
+                <input type="text" name="city" placeholder="Nom de la ville">
+                <button>Add Cafe</button>
+            </form>
+            
             <ul id="cafe-list"></ul>
 
         </div>
-
     
     <script>
         // Initialize Firebase
@@ -26,6 +31,8 @@
         messagingSenderId: "323527646865"
         };
         firebase.initializeApp(config);
+        const db = firebase.firestore();
+        db.settings({ timestampsInSnapshots: true});
     </script>
     <script src="app.js"></script>
 </body>
